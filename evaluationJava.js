@@ -145,7 +145,7 @@ function efface(param, param2,) {
 
 }
 
-function effaceD(para1, para2) {
+function  effaceD(para1, para2) {
     para1.style.visibility = "hidden";
     para2.style.visibility = "hidden";
 }
