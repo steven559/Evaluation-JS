@@ -1,0 +1,165 @@
+.image {
+    margin-top: 20%;
+    border: solid black 0.25vh;
+    width: 22.9vh;
+    height: 10.8vh;
+    margin-bottom: 2%;
+
+}
+
+h1 {
+    margin-left: 76.33vh;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 3vh;
+    text-shadow: -0.12vh -0.12vh #eee, 0.12vh 0.12vh #888, -0.36vh 0 0.48vh #000;
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    color: #ccc;
+    padding: 2vh;
+    font-weight: lighter;
+    -moz-box-shadow: 0.25vh 0.25vh 0.76vh #888;
+    -webkit-box-shadow: 0.25vh 0.25vh 0.75vh #888;
+    box-shadow: 0.25vh 0.25vh 0.75vh #888;
+
+    display: inline;
+    line-height: 11.7vh;
+}
+
+img {
+    cursor: pointer;
+    padding-left: 10%;
+
+}
+
+#div0, #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20 {
+    background-image: url("https://media.cdnws.com/_i/9675/9581/1/81/907-4-ducale-dos-bleu.png");
+    background-size: cover;
+    height:auto;
+    transform: rotateY(180deg);
+
+
+
+}
+body{
+    background-image: url("https://media.giphy.com/media/l2SpTiuOIvpUlnHkA/giphy.gif");
+background-size: cover;
+}
+
+
+
+
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 1;
+
+    width: 100%;
+
+    height: 100%;
+
+    left: 0;
+
+    top: 0;
+
+    overflow: auto;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}.modal-content {
+
+     background-color: red
+
+ ;
+
+     margin: 10% auto;
+
+     width: 70%;
+
+     box-shadow: 0 0.63vh 1.01vh 0 rgba(0, 0, 0, 0.2), 0 0.89vh 2.5vh 0 rgba(0, 0, 0, 0.17);
+
+     animation-name: modalopen;
+
+     animation-duration: 1s;
+
+ }.modal-header h2, .modal-footer h3 {
+
+      margin: 0;
+
+  }.modal-header {    display: inline-block;
+
+       background: forestgreen;
+   ;
+
+       padding: 1.9vh;
+
+       color: #ffa866;
+
+   }.modal-body {
+
+        padding: 1.25vh 2.5vh;
+
+    }.modal-footer {
+
+         background: forestgreen;
+
+
+
+         padding: 1.25vh;
+
+         color: #fff;
+
+         text-align: center;
+
+     }.closeBtn {
+
+          color: #ccc;
+
+          float: right;
+
+          font-size: 3.8vh;
+
+      }.closeBtn:hover, .closeBtn:focus {
+
+           color: #000;
+
+           text-decoration: none;
+
+           cursor: pointer;
+
+       }@keyframes modalopen {
+
+            from {
+
+                opacity: 0
+
+            }
+
+            to {
+
+                opacity: 1
+
+            }
+
+        }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 820px) {
+    #div0, #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20 {
+
+
+        height: 10%;
+width:10%;
+        display: inline-block;
+
+    }
+    section{
+        width:200%;
+    }
+    body{
+        width:120%;
+
+    }
+}

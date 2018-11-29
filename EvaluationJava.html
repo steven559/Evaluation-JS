@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="evaluationJava.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+
+</head>
+<body>
+<h1>Jeux Memory</h1>
+<div class="container-fluid" >
+    <div class="row" >
+        <div class="col-sm-1"></div>
+        <div id="simpleModal" class="modal">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>FELICITATIONS ! VOTRE SCORE EST DE : </p>
+
+                    <p id="score"></p>
+                    <p> tu as fais </p>
+                    <p id="score2"></p> pair
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <div class="closeBtn" onclick="closeModal(),score()">Recommencer Partie</div>
+
+                </div>
+
+            </div>
+
+        </div>
+<section id="random" class="col-sm-10">
+
+
+
+</section>
+        <div class="col-sm-1" id="start"></div>
+</div>
+</div>
+<script src="evaluationJava.js"></script>
+</body>
+</html>
