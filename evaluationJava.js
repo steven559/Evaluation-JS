@@ -1,3 +1,6 @@
+
+// Picture Array
+
 var tableau = [
     "cartman-hitler", "Eric-Cartman-ConvertImage", "garrison-ConvertImage", "images", "images", "Eric-Cartman-ConvertImage",
     "cartman-hitler", "images-ConvertImage", "images-ConvertImage", "Inspector_butters", "Inspector_butters",
@@ -12,7 +15,7 @@ var imag;
 
 //double-sided card
 
-function affiche() {
+function affiche() { // Display function
 
     for (var i = 0; i < tableau.length; i++) {
         div = document.createElement("div");
@@ -22,7 +25,10 @@ function affiche() {
 
 
         div.id = "div" + i;
-        imag.style.width = 17.8+"vh";
+
+        // Set width , height etc...
+
+        imag.style.width = 17.8 + "vh";
         imag.style.height = 20.3 + "vh";
         imag.style.marginTop = 2.5 + "vh";
         div.style.border = "solid black 0.25vh";
@@ -32,7 +38,7 @@ function affiche() {
         div.style.marginLeft = 6.9 + "vh";
         imag.style.visibility = "hidden";
         div.style.display = "inline-block";
-        document.getElementById("random").appendChild(div);
+        document.getElementById("random").appendChild(div); // Push pictures
         div.appendChild(imag);
 
         imag.className = "mac";
@@ -85,38 +91,39 @@ function score() {
     }
 
     document.getElementById("start").innerHTML = min + ":" + sec + ":" + msec;
-    document.getElementById("start").style.fontSize=2.5+"vh";
+    document.getElementById("start").style.fontSize = 2.5 + "vh";
 
     time = setTimeout("score()", 10);
 
 
 }
 
-function newscore() {
+function newscore() { // Start Timer function
     start = new Date();
     score();
 
 
 }
 
+//victory screen
 
-var modal = document.getElementById('simpleModal');
+var modal = document.getElementById('simpleModal'); // Victory screen ID
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 closeBtn.addEventListener('click', closeModal);
 
 function openModal() {
 
-    modal.style.display = 'block';
+    modal.style.display = 'block'; // Display victory screen
 
 }
 
 function closeModal() {
 
-    modal.style.display = 'none';
+    modal.style.display = 'none'; // Hide victory screen
 
 }
 
-//cards random
+//Shuffling cards
 
 function dede() {
     for (var i = tableau.length - 1; i >= 1; i--) {
@@ -139,19 +146,19 @@ console.log();
 
 //delete image
 
-function efface(param, param2,) {
+function efface(param, param2,) {  // Hide pictures
     param.style.visibility = "hidden";
     param2.style.visibility = "hidden";
 
 }
 
-function  effaceD(para1, para2) {
+function effaceD(para1, para2) {  // Not use
     para1.style.visibility = "hidden";
     para2.style.visibility = "hidden";
 }
 
 
-//var trying, Table
+// Tries number variable & pictures compare
 
 var img2 = document.getElementsByClassName('mac');
 var nombreEssaie = 0;
@@ -160,22 +167,21 @@ var t = 0;
 var choix = [];
 var pourdiv = [];
 
-function reset() {
+function reset() { // Reset function
     location.reload();
 }
 
-document.getElementById("simpleModal").onclick = function () {
+document.getElementById("simpleModal").onclick = function () { // Closing victory screen
     reset();
 
 };
 
-//Function to return the card, all conditions
+//Flip card function with all conditions
 
 for (let j = 0; j < tableau.length; j++) {
 
     document.getElementById("div" + j).addEventListener("click", function (e) {
         console.log("j=" + j);
-
 
 
         console.log(pourdiv);
@@ -200,7 +206,7 @@ for (let j = 0; j < tableau.length; j++) {
         }
 
         if (t === 2) {
-            nombreEssaie++;
+            nombreEssaie++; // Try number + 1
 
             if (choix[0].src !== choix[1].src) {
 
@@ -219,7 +225,7 @@ for (let j = 0; j < tableau.length; j++) {
 
 
             } else {
-                nombrePaire++;
+                nombrePaire++; // Pair find + 1
                 console.log("nb paires =" + nombrePaire);
                 pourdiv[0].style.visibility = 'hidden';
                 pourdiv[1].style.visibility = 'hidden';
@@ -231,7 +237,7 @@ for (let j = 0; j < tableau.length; j++) {
             }
 
 
-            if (nombrePaire == 9) {
+            if (nombrePaire == 9) { // Victory
                 clearTimeout(time);
                 openModal();
                 document.getElementById("score").innerHTML = document.getElementById("start").innerHTML;

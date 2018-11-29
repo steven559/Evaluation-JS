@@ -34,20 +34,15 @@ img {
 #div0, #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20 {
     background-image: url("https://media.cdnws.com/_i/9675/9581/1/81/907-4-ducale-dos-bleu.png");
     background-size: cover;
-    height:auto;
+    height: auto;
     transform: rotateY(180deg);
 
-
-
 }
-body{
+
+body {
     background-image: url("https://media.giphy.com/media/l2SpTiuOIvpUlnHkA/giphy.gif");
-background-size: cover;
+    background-size: cover;
 }
-
-
-
-
 
 .modal {
 
@@ -69,96 +64,112 @@ background-size: cover;
 
     background-color: rgba(0, 0, 0, 0.5);
 
-}.modal-content {
+}
 
-     background-color: red
+.modal-content {
 
- ;
+    background-color: red;
 
-     margin: 10% auto;
+    margin: 10% auto;
 
-     width: 70%;
+    width: 70%;
 
-     box-shadow: 0 0.63vh 1.01vh 0 rgba(0, 0, 0, 0.2), 0 0.89vh 2.5vh 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 0.63vh 1.01vh 0 rgba(0, 0, 0, 0.2), 0 0.89vh 2.5vh 0 rgba(0, 0, 0, 0.17);
 
-     animation-name: modalopen;
+    animation-name: modalopen;
 
-     animation-duration: 1s;
+    animation-duration: 1s;
 
- }.modal-header h2, .modal-footer h3 {
+}
 
-      margin: 0;
+.modal-header h2, .modal-footer h3 {
 
-  }.modal-header {    display: inline-block;
+    margin: 0;
 
-       background: forestgreen;
-   ;
+}
 
-       padding: 1.9vh;
+.modal-header {
+    display: inline-block;
 
-       color: #ffa866;
+    background: forestgreen;;
 
-   }.modal-body {
+    padding: 1.9vh;
 
-        padding: 1.25vh 2.5vh;
+    color: #ffa866;
 
-    }.modal-footer {
+}
 
-         background: forestgreen;
+.modal-body {
 
+    padding: 1.25vh 2.5vh;
 
+}
 
-         padding: 1.25vh;
+.modal-footer {
 
-         color: #fff;
+    background: forestgreen;
 
-         text-align: center;
+    padding: 1.25vh;
 
-     }.closeBtn {
+    color: #fff;
 
-          color: #ccc;
-                         float: right;
+    text-align: center;
 
-          font-size: 3.8vh;
+}
 
-      }.closeBtn:hover, .closeBtn:focus {
+.closeBtn {
 
-           color: #000;
+    color: #ccc;
+    float: right;
 
-           text-decoration: none;
+    font-size: 3.8vh;
 
-           cursor: pointer;
+}
 
-       }@keyframes modalopen {
+.closeBtn:hover, .closeBtn:focus {
 
-            from {
+    color: #000;
 
-                opacity: 0
+    text-decoration: none;
 
-            }
+    cursor: pointer;
 
-            to {
+}
 
-                opacity: 1
+@keyframes modalopen {
 
-            }
+    from {
 
-        }
+        opacity: 0
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 820px) {
-    #div0, #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20 {
+    }
 
+    to {
+
+        opacity: 1
+
+    }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 820px) {
+
+    #div0, #div1, #div2, #div3, #div4, #div5, #div6, #div7,
+    #div8, #div9, #div10, #div11, #div12, #div13, #div14,
+    #div15, #div16, #div17, #div18, #div19, #div20 {
 
         height: 10%;
-width:10%;
-        display: inline-block;
+        width: 10%;
+    !important display: inline-block;
 
     }
-    section{
-        width:200%;
+
+    section {
+        width: 200%;
     }
-    body{
-        width:120%;
+
+    body {
+        width: 120%;
 
     }
 }
