@@ -136,10 +136,19 @@ function dede() {
     }
 
 }
-
 dede();
 affiche();
-newscore();
+var but=0;
+
+var boutton=document.getElementById("bt");
+boutton.addEventListener("click",function(){
+but++;
+    newscore();
+    }
+);
+
+
+
 
 
 console.log();
@@ -176,27 +185,34 @@ document.getElementById("simpleModal").onclick = function () { // Closing victor
 
 };
 
+
 //Flip card function with all conditions
 
 for (let j = 0; j < tableau.length; j++) {
 
     document.getElementById("div" + j).addEventListener("click", function (e) {
         console.log("j=" + j);
-
+if(but==0){
+    alert("veuillez clicker sur start");
+}
 
         console.log(pourdiv);
 
 
-        if (t < 2) {
+        if (t < 2 && but>0) {
 
-            document.getElementById("div" + j).style.visibility = 'hidden';
+
+
             //ici
+
+            document.getElementById("div"+j).style.visibility="hidden";
             if (document.getElementById("image" + j).style.visibility == "hidden") {
                 pourdiv.push(document.getElementById("div" + j));
                 t++;
 
-                document.getElementById("image" + j).style.visibility = "visible";
-                choix.push(e.target.firstChild);
+
+                    document.getElementById("image" + j).style.visibility = "visible";
+                    choix.push(e.target.firstChild);
 
                 console.log(t);
                 console.log(choix);

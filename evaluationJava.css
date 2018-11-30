@@ -35,10 +35,35 @@ img {
     background-image: url("https://media.cdnws.com/_i/9675/9581/1/81/907-4-ducale-dos-bleu.png");
     background-size: cover;
     height: auto;
-    transform: rotateY(180deg);
+
+
 
 }
 
+/*animation test
+.divv{
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-iteration-count: 1;
+
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: initial  ;
+    animation-name:tourne;
+
+
+}
+@keyframes tourne {
+    from {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    to {
+
+        transform: rotateY(180deg);
+    }
+}
+*/
 body {
     background-image: url("https://media.giphy.com/media/l2SpTiuOIvpUlnHkA/giphy.gif");
     background-size: cover;
@@ -150,6 +175,20 @@ body {
 
     }
 
+}
+#bt{
+    width:80%;
+    height:12%;
+
+    background: #4893cc;
+    font:bold 13px Arial;
+    border-radius:50%;
+    border:none;
+    color:#fff;
+
+}
+section{
+    margin-top: 1%;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 820px) {
